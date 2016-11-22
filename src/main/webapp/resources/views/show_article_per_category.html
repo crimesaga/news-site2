@@ -1,0 +1,37 @@
+<div class="">
+	<div class="row">
+		<div class="col-lg-9 offset-lg-3">
+			<div class="media">
+				<div class="media-above">
+					<a href="#/news_detail/{{themeNews.id}}"> <img class="media-object" src="{{themeNews.imageUrl}}" alt="..."> </a>
+				</div>
+				<div class="media-body">
+
+					<h4 class="media-heading">
+						<a href="#/news_detail/{{themeNews.id}}" class="mainlimitedtitle" style="color: black">{{themeNews.title}}</a>
+					</h4>
+					<div class="limitedsummary">{{themeNews.summary}}</div>
+				</div>
+			</div>
+			<div>
+				<ul class="list-group">
+					<div ng-repeat="news in articles track by news.id">
+						<li class="list-group-item">
+							<div class="media">
+								<div class="media-left">
+									<a href="#/news_detail/{{news.id}}"> <img class="media-object" width="100" height="100" src="{{news.imageUrl}}" alt="..."> </a>
+								</div>
+								<div class="media-body">
+									<div class="media-heading limitedtitle">
+										<a href="#/news_detail/{{news.id}}">{{news.title}}</a>
+									</div>
+								</div>
+							</div></li>
+					</div>
+					<!--/ Repeat -->
+				</ul>
+			</div>
+		</div>
+		<!--  <div class="col-lg-3"><p>sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p></div>-->
+	</div>
+</div>
