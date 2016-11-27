@@ -1,8 +1,0 @@
--Admin url: http://localhost:8080/SpringSecurity/user/
-username: quest, password: 123
-
--User url: http://localhost:8080/SpringSecurity
-
--Prerequisite: Maven, bower, grunt
-
--Mysql dump file
